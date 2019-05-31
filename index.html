@@ -1,77 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Blog</title>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    <header class='header'>
-        <nav class="header__nav">
-            <ul class="header__ul">
-                <li class="header__li">Home</li>
-                <li class="header__li">Archive</li>
-                <li class="header__li">Category</li>
-                <li class="header__li">Contact</li>
-            </ul>
+  <body>
+    <header>
+      <aside class="logo">
+        <h1 class="logo__title">GridBlog</h1>
+      </aside>
+      <div class="menu-display">
+        <span>-</span>
+        <span>-</span>
+        <span>-</span>
+      </div>
+      <section class="menu">
+        <nav class="menu__nav">
+          <ul class="menu__ul">
+            <li>Home</li>
+            <li>Archive</li>
+            <li>Category</li>
+            <li>Contact</li>
+          </ul>
         </nav>
-        <form action="#" class="header__search">
-            <input type="text" class="header__input-search" name="search" id="search" placeholder="Search here">
+        <form action="#" class="menu__form">
+          <input
+            type="text"
+            class="menu__input-search"
+            name="search"
+            id="search"
+            placeholder="Search here"
+          />
         </form>
+      </section>
     </header>
-    <main class="main">
-        <section class="main__banner">
-            <article class="main__article-1">
-                <img src="" alt="">
-                <div>
-                    <h5>Category</h5>
-                    <h2>Title</h2>
-                    <p><span>Author</span><span>Date</span></p>
-                </div>
-            </article>
-            <article class="main__article-2">
-                <img src="" alt="">
-                <div>
-                    <h5>Category2</h5>
-                    <h2>Title2</h2>
-                    <p><span>Author2</span><span>Date2</span></p>
-                </div>
-            </article>
-        </section>
-        <section class="main__featured">
-
-        </section>
+    <main>
+      <section class="banner">
+        <article class="banner__article-1">
+          <img src="" alt="" />
+          <div>
+            <h5>Category</h5>
+            <h2>Title</h2>
+            <p><span>Author</span><span>Date</span></p>
+          </div>
+        </article>
+        <article class="banner__article-2">
+          <img src="" alt="" />
+          <div>
+            <h5>Category2</h5>
+            <h2>Title2</h2>
+            <p><span>Author2</span><span>Date2</span></p>
+          </div>
+        </article>
+      </section>
+      <section class="featured"></section>
     </main>
-    <footer class="footer">
-        <section class="footer__about">
-            <h3>About Us</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quisquam culpa, nisi necessitatibus quam,
-                eligendi, ad iste sit inventore quasi iure illum dolorem aliquam cupiditate excepturi veniam alias
-                blanditiis expedita.</p>
-        </section>
-        <section class="footer__contact">
-            <h3>Contact Us</h3>
-            <div class="footer__adress">
-                41-900 Bytom, ul. Jagodowa 10
-            </div>
-            <div class="footer__telephone">
-                +48 606 707 808
-            </div>
-        </section>
-        <section class="footer__newsletter">
-            <h3>Newsletter</h3>
-            <form action="submit">
-                <input type="text" placeholder="Enter e-mail adress">
-                <button type="submit">-></button>
-            </form>
-        </section>
-        <section class="footer__copyright">
-            Copyright ©2019 All rights reserved | This template is made by TrustWebDev
-        </section>
+    <footer>
+      <section class="about">
+        <h3 class="about__title">About Us</h3>
+        <p class="about_description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+          quisquam culpa, nisi necessitatibus quam, eligendi, ad iste sit
+          inventore quasi iure illum dolorem aliquam cupiditate excepturi veniam
+          alias blanditiis expedita.
+        </p>
+      </section>
+      <section class="contact">
+        <h3>Contact Us</h3>
+        <div class="contact__adress">
+          41-900 Bytom, ul. Jagodowa 10
+        </div>
+        <div class="contact__telephone">
+          +48 606 707 808
+        </div>
+      </section>
+      <section class="newsletter">
+        <h3 class="newsletter__title">Newsletter</h3>
+        <form class="newsletter__form" action="submit">
+          <input type="text" placeholder="Enter e-mail adress" />
+          <button type="submit">-></button>
+        </form>
+      </section>
+      <section class="copyright">
+        Copyright ©2019 All rights reserved | This template is made by
+        TrustWebDev
+      </section>
     </footer>
-</body>
-
+  </body>
 </html>

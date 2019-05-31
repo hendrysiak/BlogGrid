@@ -1,0 +1,26 @@
+header {
+    height: 10vh;
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-gap: 10px;
+
+    .menu {
+        height: 25vh;
+        width: 100%;
+        top: 10%;
+        display: none;
+        grid-row: row 2;
+        grid-template-rows: 5fr 1fr;
+        grid-gap: 10px;
+        position: fixed;
+        background-color: white;
+
+        .menu__ul {
+            list-style: none;
+        }
+
+    }
+
+
+}
