@@ -8,18 +8,27 @@ header {
     .menu {
         height: 25vh;
         width: 100%;
-        top: 10%;
+        top: -50%;
         display: none;
         grid-row: row 2;
         grid-template-rows: 5fr 1fr;
         grid-gap: 10px;
         position: fixed;
         background-color: white;
+        z-index: 1;
+        transition: 1s linear;
+
+
 
         .menu__ul {
             list-style: none;
         }
 
+    }
+
+    .menu--active {
+        top: 10%;
+        display: block;
     }
 
 

@@ -18,7 +18,7 @@ header {
 header .menu {
   height: 25vh;
   width: 100%;
-  top: 10%;
+  top: -50%;
   display: none;
   grid-row: row 2;
   -ms-grid-rows: 5fr 1fr;
@@ -26,9 +26,17 @@ header .menu {
   grid-gap: 10px;
   position: fixed;
   background-color: white;
+  z-index: 1;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
 }
 
 header .menu .menu__ul {
   list-style: none;
+}
+
+header .menu--active {
+  top: 10%;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
